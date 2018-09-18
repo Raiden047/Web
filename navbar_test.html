@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav_bar {
+    width: 100%;
+    font-family: sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-color: rgb(30,33,36);
+
+  }
+
+  .nav_option{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .nav_option:hover {
+    background-color: #111;
+    height: 16px;
+    border-bottom: 2px solid red;
+  }
+
+  .search_holder {
+    width: auto;
+    position: relative;
+  }
+
+  input {
+    width: 300px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 17px;
+    background-color: rgb(30,33,36);
+    background-image: url('images/search_icon.png');
+    background-position: 10px 6px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 6px 10px 6px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: background-color 0.4s;
+  }
+  input:focus{
+    color: black;
+    outline: none;
+    border: 2px solid red;
+    background-color: white;
+  }
+
+  .c {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .con {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+</style>
+</head>
+<body>
+
+  <div class="nav_bar">
+    <div class="nav_option" href="#home">Pro_Stream</div>
+    <div class="nav_option" href="#games">Games</div>
+    <div class="nav_option" href="#contact">Contact</div>
+    <div class="nav_option" href="#about">About</div>
+    <div class="search_holder">
+      <input type="text" placeholder="Search..">
+    </div>
+  </div>
+
+  <div class="c">
+    <div class="con">
+      <iframe src="https://www.youtube.com/embed/xjoTztQyE3Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+.top {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 2px 2px -2px black;
+  z-index: 10;
+}
+
+.top_info {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(66,69,73);
+  margin-bottom: 0px;
+  display: flex;
+  overflow: hidden;
+  border-top: 1px solid black;
+}
+
+.game_info, .viewer_share {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.game_info {
+  width: 60%;
+}
+
+.viewer_share {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+#title, #g_name, .live_viewers, .total_views, .share, .report {
+  width: auto;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: 8px;
+}
+
+#hash {
+  font-weight: lighter;
+  color: #f8f9fa;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+#title {
+  margin-left: 15px;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  flex: ;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#g_name {
+  margin-left: 10px;
+  padding-left: 10px;
+  color: #f8f9fa;
+  font-size: 15px;
+  font-family: sans-serif;
+  border-left: 1px solid;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.img_top {
+  display: block;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.live_viewers, .total_views{
+  margin-left: 10px;
+  color: #f8f9fa;
+  cursor: default;
+}
+
+.live_viewers, .total_views, .share, .report {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.share:hover, .report:hover {
+  border-bottom: 2px solid rgb(209, 75, 90);
+  cursor: pointer;
+  margin-top: 11px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+#l_toggle_btn, #r_toggle_btn{
+  width: 35px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  background-color: rgb(66,69,73);
+  border-top: 1px solid black;
+}
+#l-toggle-btn {
+  flex-direction: row;
+}
+#r_toggle_btn {
+  flex-direction: row-reverse;
+}
+
+.arrow {
+  cursor: pointer;
+  width: auto;
+  height: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#arrow_left:hover {
+  content: url("images/icons/arrowLeft2.png");
+}
+
+#arrow_right:hover {
+  content: url("images/icons/arrowRight2.png");
+}

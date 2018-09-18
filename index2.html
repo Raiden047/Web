@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <link href="styles-left-side-panel.css" rel="stylesheet">
+    <link href="styles-top-info.css" rel="stylesheet">
+    <link href="styles-stream.css" rel="stylesheet">
+    <link rel="icon" href="images\icons\logo_icon4.png">
+    <title>Raid</title>
+  </head>
+  <body>
+
+    <div class="lightbox">
+      <div class="iframeContainer">
+        <div class="toolbarLB">
+          <span class="closeLB" onclick="lightBoxClose()">✖</span>
+        </div>
+        <div class="pop_info">
+          <div class="pop_welcome">＼(^o^)／ Welcome to Raid ＼(^o^)／</div>
+          <div class="pop_intro">????</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav_bar">
+      <img class="web_logo" src="images\icons\logo_icon4.png" alt="">
+      <img class="web_name" src="images\Raid_img1.png" alt="">
+      <div class="nav_option" href="#games">Games</div>
+      <div class="nav_option" href="#contact">Contact</div>
+      <div class="nav_option" href="#about">About</div>
+      <div class="search_holder">
+        <input type="text" placeholder="Search...">
+      </div>
+    </div>
+
+    <main>
+
+      <div class="fav_pannel">
+        <div class="game_display">
+           <img title="Rainbow Six Siege" id="img_game" src="images\chan1_stuff\siege_img.jpeg" alt="">
+        </div>
+        <div class="chan_list">
+          <div title="Dread_Files" class="channel" id="chan1">
+            <img class="chan_img" src="images\chan1_stuff\blacklight_logo.png" alt="" onclick="load_chan(chan1)">
+          </div>
+          <div title="Ronin_th3_1" class="channel" id="chan2">
+            <img class="chan_img" src="images\chan2_stuff\dead_space.jpg" alt="" onclick="load_chan(chan2)">
+          </div>
+          <div title="IT'S_YA_BOI" class="channel" id="chan3">
+            <img class="chan_img" src="images\chan3_stuff\creepy_terry.jpg" alt="" onclick="load_chan(chan3)">
+          </div>
+          <div title="Add Channel" class="channel" id="chan4">
+            <img class="chan_add" src="images\icons\add_chan1.png" alt="">
+          </div>
+        </div>
+
+      </div>
+
+      <div id="left_sidebar">
+
+        <div class="fav_pannel_filler"></div>
+
+        <div class="channel_info">
+          <div class="chan_header">
+            <div class="chan_name">????</div>
+            <div title="Follow" class="tab_select foll">
+              <img class="follow" src="images\icons\follow_icon1.png" alt="" onclick="follow(this)">
+            </div>
+            <div title="Notify" class="tab_select">
+              <img class="bell" src="images\icons\bell_icon1.png" alt="" onclick="notify(this)">
+            </div>
+            <div title="options" class="tab_select">
+              <div class="dropdown" style="float:right;">
+                <div class="dropbtn" onclick="showContent()">∇</div>
+                <div class="dropdown-content">
+                  <a href="#">Report!</a>
+                  <a href="#">And some</a>
+                  <a href="#">More options</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content">
+            <div>
+              <img id="content_img" src="images\chan1_stuff\chan_banner_1.jpg">
+              <img id="chan_logo" src="images\chan1_stuff\blacklight_logo.png" alt="">
+            </div>
+
+            <div class="chan_stuff" onclick="showContentInfo(0)">
+              <img id="chan_op_img" src="images\icons\sub_icon.png" alt="">
+              <div class="chan_op_name">Subscribe</div>
+              <div class="show_info">⇅</div>
+            </div>
+
+            <div class="chan_stuff_info"></div>
+
+            <div class="chan_stuff" onclick="showContentInfo(1)">
+              <img id="chan_op_img" src="images\icons\schedule_icon.png" alt="">
+              <div class="chan_op_name">Schedule</div>
+              <div class="show_info">⇅</div>
+            </div>
+
+            <div class="chan_stuff_info"></div>
+
+            <div class="chan_stuff donate">
+              <img id="chan_op_img" src="images\icons\donate_icon.png" alt="">
+              <div class="chan_op_name">Donate</div>
+              <div class="show_info">⇅</div>
+            </div>
+
+            <div class="chan_stuff" onclick="showContentInfo(2)">
+              <img id="chan_op_img" src="images\icons\rules_icon.png" alt="">
+              <div class="chan_op_name">Rules</div>
+              <div class="show_info">⇅</div>
+            </div>
+
+            <div class="chan_stuff_info"></div>
+
+            <div class="chan_stuff"  onclick="showContentInfo(3)">
+              <img id="chan_op_img" src="images\icons\connect_icon.png" alt="">
+              <div class="chan_op_name">Connect</div>
+              <div class="show_info">⇅</div>
+            </div>
+
+            <div class="chan_stuff_info"></div>
+
+            <div class="chan_stuff"  onclick="showContentInfo(4)">
+              <img id="chan_op_img" src="images\icons\discord_icon.png" alt="">
+              <div class="chan_op_name">Discord</div>
+              <div class="show_info">⇅</div>
+            </div>
+
+            <div class="chan_stuff_info"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="m_container">
+        <div id="left_column"></div>
+
+        <div class="m_box">
+
+          <div class="top">
+
+            <div class="toggle" id="l_toggle_btn">
+              <img class="arrow" id="arrow_left" src="images\icons\arrowLeft1.png" alt="" onclick="openLNav()">
+            </div>
+
+            <div class="top_info">
+              <div class="game_info">
+                <div id="title">????</div>
+                <div id="g_name">????</div>
+              </div>
+              <div class="viewer_share">
+                <img title="Live viewers" class="img_top" src="images\icons\eye-icon-live.png" alt="">
+                <div title="Live viewers" class="live_viewers">0</div>
+                <img title="Total views" class="img_top" src="images\icons\eye-icon.png" alt="">
+                <div title="Total views" class="total_views">2,500,000</div>
+                <div title="Share" class="share">
+                  <img class="img_top" src="images\icons\share-icon.png" alt="">
+                </div>
+                <div title="Video Options" class="report">
+                  <img class="img_top" src="images\icons\options-icon.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="toggle" id="r_toggle_btn">
+              <img class="arrow" id="arrow_right" src="images\icons\arrowRight1.png" alt="" onclick="openRNav()">
+            </div>
+
+          </div>
+
+          <div class="streamBox" id="streamBox">
+              <div class="main_stream" id="main_stream">
+                <div class="m_user_overlay">
+                  <img class="m_user_img" src="" alt="">
+                  <div class="m_user_name"></div>
+                  <div id="m_over_back"></div>
+                </div>
+                <video class="video0 vid video-fluid" id="vidM" paused loop>
+                  <source src="videos/titanfall1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="stream_wheel" id="stream_wheel">
+                <div class="s_box" id="s_box">
+                  <video class="video0 vid video-fluid" id="vid1" paused loop muted onclick="switchVid(this)">
+                    <source src="videos/zelda2.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="s_box" id="s_box">
+                  <video class="video0 vid video-fluid" id="vid2" paused loop muted onclick="switchVid(this)">
+                    <source src="videos/gMod2.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="s_box" id="s_box">
+                  <video class="video0 vid video-fluid" id="vid3" paused loop muted onclick="switchVid(this)">
+                    <source src="videos/rainbow2.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="s_box" id="s_box">
+                  <video class="video0 vid video-fluid" id="vid4" paused loop muted onclick="switchVid(this)">
+                    <source src="videos/witchers1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="s_box s_box_final" id="s_box">
+                  <img class="img_add" src="images\plus-button.png" alt="">
+                </div>
+              </div>
+
+          </div>
+
+          <div class="back">
+            <img id="img_back" src="images\chan1_stuff\r6_back.jpg" alt="">
+          </div>
+
+          <div class="copy_right">
+            Copyright © 2018 Fahad Ibrahim USA. All rights reserved.
+          </div>
+
+        </div>
+
+        <div id="right_column"></div>
+
+      </div>
+
+      <div title="This is just an image, sorry" id="right_sidebar">
+        <img class="fill" id="chat_img" src="images\Chatbox.png">
+      </div>
+
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="javascript\channels.js"></script>
+    <script src="javascript\main.js"></script>
+    <script src="javascript\pop.js"></script>
+  </body>
+</html>

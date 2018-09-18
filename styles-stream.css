@@ -1,0 +1,224 @@
+.stream_wheel video {
+  width: 100%;
+  position: absolute;
+  height: auto;
+  overflow: hidden;
+}
+
+#vidM {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#m_container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.m_box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  background-color: rgb(66,69,73);
+  position: relative;
+}
+
+.streamBox {
+  width: 90%;
+  height: auto;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  z-index: 99;
+  box-shadow: 0 4px 2px -2px black;
+  position: relative;
+}
+
+.main_stream {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+
+.stream_wheel {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  overflow-y: visible;
+
+}
+
+.s_box {
+  position: relative;
+  width: 20%;
+  height: auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 1.4px;
+  overflow: visible;
+  cursor: pointer;
+
+}
+
+.s_box:hover {
+  box-shadow: 0 0 15px 5px #cc3333;
+  z-index: 999;
+}
+
+.s_box_final {
+
+}
+
+.img_add {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 56.25%;
+}
+
+.back {
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex: 1;
+}
+
+#img_back {
+  display: block;
+  width: 100%;
+  height: auto;
+  bottom: 1px;
+  position: absolute;
+  opacity: 0.75;
+  z-index: 0;
+  border-radius: 0px;
+  -webkit-mask-image: linear-gradient(to top, rgba(66,69,73,1), rgba(66,69,73,0));
+  -ms-mask-image: linear-gradient(to top, rgba(66,69,73,1), rgba(66,69,73,0));
+  -moz-mask-image: linear-gradient(to top, rgba(66,69,73,1), rgba(66,69,73,0));
+}
+
+.copy_right {
+  color: grey;
+  font-size: 16px;
+  position: absolute;
+  z-index: 1;
+  top: 95%;
+  left: 50%;
+  margin-left: -202.4px;
+}
+
+/* this is for the sbox hover user images*/
+.m_user_overlay {
+  width: 100%;
+  height: 50px;
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  z-index: 999;
+  overflow: hidden;
+}
+
+#m_over_back {
+  position:absolute;
+  width: 110%;
+  height: 120%;
+  left: -20px;
+  bottom:0;
+  background: rgba(66,69,73,0.7);
+  filter: blur(4px);
+  z-index:-1;
+}
+
+.m_user_img {
+  display: block;
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 45px;
+  height: 45px;
+  border-radius: 200px;
+}
+
+.m_user_name {
+  position: relative;
+  width: 200px;
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+  font-size: 18px;
+}
+
+.main_stream:hover .m_user_overlay {
+  transition: opacity 0.5s;
+  opacity: 1;
+  animation: come_down 5s;
+}
+
+@keyframes come_down {
+  10% {
+    top: 0;
+  }
+  50% {
+    top: 0;
+  }
+  70% {
+    top: -50px;
+  }
+  100% {
+    top: -50px;
+  }
+}
+
+.user_overlay {
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+.guest_img {
+  display: block;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  border-radius: 200px;
+}
+
+.guest_name {
+  color: white;
+  font-size: 12px;
+  margin-top: 3%;
+}
+
+.s_box:hover .video0 {
+  transition: filter;
+  filter: blur(1px);
+}
+
+.s_box:hover .user_overlay {
+  transition: opacity 0.5s;
+  opacity: 1;
+}
